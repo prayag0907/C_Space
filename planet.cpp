@@ -2,6 +2,7 @@
 #include "planet.h"
 #include "unit.h"
 #include <string.h>
+#include <stdlib.h>
 using namespace std;
 
 /*planet::planet(char *name) : unit (xPos,yPos,zPos)
