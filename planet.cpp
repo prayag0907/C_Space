@@ -3,7 +3,9 @@
 #include "unit.h"
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 using namespace std;
+
 
 /*planet::planet(char *name) : unit (xPos,yPos,zPos)
 { 
@@ -139,6 +141,7 @@ void planet::Shop(ship &s)
 //	  SetConsoleTextAttribute(hStdout, FOREGROUND_GREEN | FOREGROUND_RED);
 	  cout << "\n\t\t\tWelcome to " << *planetName << endl;
 //	  SetConsoleTextAttribute(hStdout, FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE);
+	  int n=0; for (n=0;n < 24; n++) { printf("\n"); }
 	  cout << "\tYou have the follwing..." << endl;
 	  cout << "\t\tIron: " << s.getIron() << "Sugar: " << s.getSugar() << "Rice: " << s.getRice() << endl;
 	  cout << "\t\tMoney: " << s.getFunds() << "Fuel: " << s.getFuel() << "Cargo Space left: " << s.getCARGO_MAX()-(s.getIron()+s.getRice()+s.getSugar()) << endl; 
